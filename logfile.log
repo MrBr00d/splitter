@@ -1,0 +1,10 @@
+2024-12-24 14:06:49,554 - INFO - Starting to create the transaction database at /Users/marjon/Desktop/Nick/WWW/Project/data/transaction.db.
+2024-12-24 14:06:49,560 - INFO - Database connected successfully at /Users/marjon/Desktop/Nick/WWW/Project/data/transaction.db.
+2024-12-24 14:06:49,573 - INFO - Groups table created or already exists.
+2024-12-24 14:06:49,576 - INFO - Participants table created or already exists.
+2024-12-24 14:06:49,585 - INFO - Transactions table created or already exists.
+2024-12-24 14:06:49,588 - INFO - Database tables created successfully at /Users/marjon/Desktop/Nick/WWW/Project/data/transaction.db.
+2024-12-24 14:06:49,590 - INFO - Connection to database succesful
+2024-12-24 14:11:32,071 - INFO - Group loading OK.
+2024-12-24 14:36:55,198 - INFO - Group loading OK.
+2024-12-24 14:37:12,734 - INFO - Group loading OK.
