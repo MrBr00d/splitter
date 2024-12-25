@@ -8,3 +8,19 @@
 2024-12-24 14:11:32,071 - INFO - Group loading OK.
 2024-12-24 14:36:55,198 - INFO - Group loading OK.
 2024-12-24 14:37:12,734 - INFO - Group loading OK.
+2024-12-24 16:48:11,770 - INFO - Group loading OK.
+2024-12-24 16:57:16,601 - INFO - Group loading OK.
+2024-12-24 17:00:58,901 - INFO - Group loading OK.
+2024-12-24 17:06:48,383 - INFO - Group listing OK.
+2024-12-24 17:07:16,713 - INFO - Group loading OK.
+2024-12-24 17:08:50,190 - INFO - Group loading OK.
+2024-12-24 17:13:12,533 - INFO - Group loading OK.
+2024-12-24 17:14:51,723 - INFO - Group loading OK.
+2024-12-24 17:16:14,385 - INFO - Group loading OK.
+2024-12-24 17:36:29,252 - INFO - Group listing OK.
+2024-12-24 17:37:04,115 - ERROR - Unexpected error occurred: execute expected at least 1 argument, got 0
+2024-12-24 17:37:04,116 - INFO - Group listing OK.
+2024-12-24 17:40:31,919 - INFO - Creation group test group 2 OK
+2024-12-24 17:40:31,921 - INFO - Group listing OK.
+2024-12-24 17:42:09,810 - INFO - Delete group test group 2 OK
+2024-12-24 17:42:09,813 - INFO - Group listing OK.

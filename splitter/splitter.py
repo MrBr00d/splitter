@@ -12,6 +12,4 @@ handlers=[
     ]
 )
 if __name__ == "__main__":
-    a,b = dbloader.load_group(1)
-    print(a[0])
-    print(b)
+    print(dbloader.list_groups())
