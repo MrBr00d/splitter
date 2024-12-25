@@ -13,16 +13,24 @@ class Group():
         for name, balance in self.participant_data:
             self.participants.append(Participant(name, balance))
 
-    def get_participants(self):
-        return [x.name for x in self.participants]
+    def get_participants(self) -> list:
+        '''Returns a list of all participants in the current group.
+        The list contains all Participants as a Participant class'''
+        return [x for x in self.participants]
 
 class Participant():
-    def __init__(self, name:str, balance):
-        self.name = name
-        self.balance = None
+    def __init__(self, name:str, balance=0):
+        try:
+            self.name = name
+            self.balance = float(balance)
+            logger.info(f"Created Participant {self.name} with balance {self.balance}")
+        except Exception as e:
+            logger.error(f"An unexpected error occured while creating Participant: {e}")
+            raise e
+
     def __str__(self):
         return f"Participant class instance of {self.name}"
-    def get_balance(self):
+    def get_balance(self) -> float:
         return self.balance
 
 class Transaction():

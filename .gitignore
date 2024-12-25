@@ -1,5 +1,6 @@
 #Custom rules
 data/
+todo
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -26,6 +26,8 @@ def list_groups(filepath=db_path) -> dict:
 def load_group(group_id:int, filepath=db_path):
     '''Return al the value needed to create a group class.
     Checks first if group exists, if the group does not exist it will be created.'''
+    if (type(group_id) != int) or (group_id < 1):
+        raise TypeError(f"Entered group_id type is not valid. entered type is {type(group_id)} where type 'string' was expected")
     try:
         conn = sqlite3.connect(filepath)
         cursor = conn.cursor()
@@ -36,9 +38,15 @@ def load_group(group_id:int, filepath=db_path):
         participant_data = cursor.fetchall()
     
         conn.close()
-        logger.info("Group loading OK.")
+        if group_data == None:
+            raise ValueError(f"No groups are found with group_id {group_id}.")
+        else:
+            logger.info("Group loading OK.")
     except sqlite3.Error as e:
         logger.error(f"SQLite error occurred: {e}")
+    except ValueError as e:
+        logger.error(f"Group loading FAILED. No groups found with group_id = {group_id}")
+        raise ValueError(e)
     except Exception as e:
         logger.error(f"Unexpected error occurred: {e}")
     return group_data, participant_data

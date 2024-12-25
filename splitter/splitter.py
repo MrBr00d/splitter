@@ -1,7 +1,7 @@
 from utils import helpers, dbloader, data_dir, db_path
 import logging
 from pathlib import Path
-from models.classes import Group
+from models.classes import Group, Participant
 
 logging.basicConfig(
 level=logging.DEBUG,  # Capture all levels of logs
@@ -12,4 +12,4 @@ handlers=[
     ]
 )
 if __name__ == "__main__":
-    print(dbloader.list_groups())
+    part1 = Participant("john", "had")
